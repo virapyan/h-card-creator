@@ -1,0 +1,40 @@
+{
+  "name": "h-card-creator",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "immutable": "4.0.0-rc.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-immutable": "4.0.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "1.11.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/internals/testing/enzyme-setup.js"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

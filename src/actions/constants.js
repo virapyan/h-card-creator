@@ -1,0 +1,11 @@
+export const UPDATE_NAME = 'update_name';
+export const UPDATE_SURNAME = 'update_surname';
+export const UPDATE_EMAIL = 'update_email';
+export const UPDATE_PHONE = 'update_phone';
+export const UPDATE_HOUSE_NAME = 'update_house_name';
+export const UPDATE_STREET = 'update_street';
+export const UPDATE_SUBURB = 'update_suburb';
+export const UPDATE_STATE = 'update_state';
+export const UPDATE_POSTCODE = 'update_postcode';
+export const UPDATE_COUNTRY = 'update_country';
+export const UPDATE_AVATAR = 'update_avatar';
