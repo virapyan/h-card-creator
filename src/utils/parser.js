@@ -1,31 +1,35 @@
 /*
  * This data is just for testing purposes. In the completed app
- * it should be passed dynamically to "destruct" method.
+ * it should be passed dynamically to "fromHtml" method.
+ * This case is just to test s card data for existing users.
+ * For new users it will be empty. Feel free to replace the default
+ * (new user) state with this string.
  */
-const initialCard = `
-  <div class="vcard">
-    <span class="fn n">
-      <span class="given-name">Robert</span>
-      <span class="family-name">Stevenson</span>
-    </span>
-    <a class="email" href="mailto:r.stevenson@gmail.com">r.stevenson@gmail.com</a>
-    <div class="adr">
-      <div class="street-address">25, Howard Avenue</div>
-      <span class="locality">Neutral Bay</span>, 
-      <span class="region">NSW</span>,
-      <span class="postal-code">2089</span>
-      <span class="country-name">Australia</span>
-    </div>
-    <div class="tel">0455234567</div>
-    <img class="photo" src=""/>
-  </div>`;
+
+ /* const initialCard = `
+      <div class="vcard">
+        <span class="fn n">
+          <span class="given-name">Robert</span>
+          <span class="family-name">Stevenson</span>
+        </span>
+        <a class="email" href="mailto:r.stevenson@gmail.com">r.stevenson@gmail.com</a>
+        <div class="adr">
+          <div class="street-address">25, Howard Avenue</div>
+          <span class="locality">Neutral Bay</span>, 
+          <span class="region">NSW</span>,
+          <span class="postal-code">2089</span>
+          <span class="country-name">Australia</span>
+        </div>
+        <div class="tel">0455234567</div>
+        <img class="photo" src=""/>
+      </div>`;
+  */
 
 /* 
  * For existing cards cardString prop should be loaded from server.
- * For new cards probably will still load from the server but with empty fields,
- * or could be generated locally as an initial value with empty fields.
+ * For new cards will be empty,
  */ 
-export const fromHtml = (cardString = initialCard) => {
+export const fromHtml = (cardString = '') => {
   const parser = new DOMParser();
   const doc = parser.parseFromString(cardString, "text/html");
 
